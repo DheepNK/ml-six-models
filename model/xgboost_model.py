@@ -8,12 +8,13 @@ from sklearn.metrics import (
 
 def train_model(X_train, y_train, X_test, y_test):
     model = XGBClassifier(
-        n_estimators=200,
+        n_estimators=50,
         learning_rate=0.1,
-        max_depth=6,
+        max_depth=4,
         random_state=42,
         eval_metric="logloss",
-        use_label_encoder=False
+        use_label_encoder=False,
+        n_jobs=1
     )
     model.fit(X_train, y_train)
 

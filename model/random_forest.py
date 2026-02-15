@@ -8,8 +8,10 @@ from sklearn.metrics import (
 
 def train_model(X_train, y_train, X_test, y_test):
     model = RandomForestClassifier(
-        n_estimators=200,
-        random_state=42
+        n_estimators=75,
+        random_state=42,
+        n_jobs=1,
+        max_depth=6
     )
     model.fit(X_train, y_train)
 
