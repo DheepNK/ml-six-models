@@ -4,7 +4,7 @@
 Build and compare multiple classification models on the Bank Marketing dataset and present results through an interactive Streamlit application.
 
 ## Dataset
-- Records: ~45,000
+- Records: ~5,000
 - Features: 16 input features
 - Target: `y` (binary: yes / no)
 
